@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import CardView from "./CardView";
+import CardView from "../components/CardView";
 export default function SuperHeroes() {
   const [heroes, setheroes] = useState([]);
   const [error, seterror] = useState("");

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function CustomTable({ tabname, data, err }) {
   return (
@@ -24,10 +25,10 @@ export default function CustomTable({ tabname, data, err }) {
             return (
               <tr key={el.id}>
                 <td className="text-center border border-red-500 h-9">
-                  {el.name}
+                  <Link to={el.id.toString()}>{el.name}</Link>
                 </td>
                 <td className="text-center border border-red-500 h-9">
-                  {el.alterEgo}
+                  <Link to={el.id.toString()}>{el.alterEgo}</Link>
                 </td>
               </tr>
             );

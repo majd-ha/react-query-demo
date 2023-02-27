@@ -1,6 +1,6 @@
 import React from "react";
+import CardView from "../components/CardView";
 import { useSuperHeroData } from "../hooks/useSuperHeroData";
-import CardView from "./CardView";
 
 export default function RQsuperheroes() {
   const onError = (error) => {
@@ -14,6 +14,9 @@ export default function RQsuperheroes() {
     onError,
     onSuccess
   );
+  if (isError) {
+    throw Error("element not found");
+  }
 
   return (
     <div className="flex justify-center">
