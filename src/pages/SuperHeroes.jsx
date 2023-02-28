@@ -17,6 +17,9 @@ export default function SuperHeroes() {
         setloadings(false);
       });
   }, []);
+  if (error) {
+    throw Error(error.message);
+  }
   return (
     <div className="flex justify-center">
       <CardView

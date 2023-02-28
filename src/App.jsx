@@ -17,7 +17,7 @@ import SuperHeroes from "./pages/SuperHeroes";
 
 import RootLayout from "./layouts/RootLayout";
 import RQSuperHerolayout from "./layouts/RQSuperHerolayout";
-import SuperHeroLayout from "./layouts/SuperHeroLayout";
+import SuperHerolayout from "./layouts/SuperHerolayout";
 //components
 import ErrorPage from "./components/ErrorPage";
 
@@ -25,7 +25,11 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="/superhroes" element={<SuperHeroLayout />}>
+      <Route
+        path="/superhroes"
+        element={<SuperHerolayout />}
+        errorElement={<ErrorPage />}
+      >
         <Route index element={<SuperHeroes />} />
         <Route path=":heroId" element={<SingleSuperHero />} />
       </Route>

@@ -15,7 +15,7 @@ export default function RQsuperheroes() {
     onSuccess
   );
   if (isError) {
-    throw Error("element not found");
+    throw Error(error.message);
   }
 
   return (

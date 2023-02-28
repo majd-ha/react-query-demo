@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useRouteError } from "react-router-dom";
+import ArrowBack from "../Icons/ArrowBack";
 import ErorrSvg from "../Icons/ErorrSvg";
 export default function ErrorPage() {
   const error = useRouteError();
@@ -11,7 +12,10 @@ export default function ErrorPage() {
         </h1>
         <p className="text-3xl font-mono mt-8">{error.message}</p>
         <p className="text-2xl mt-6 italic">
-          Browse the list here <Link to={"/Rqsuperhroes/"}>Super heros</Link>
+          Go Back{" "}
+          <Link to={-1} className="text-green-600">
+            <ArrowBack />
+          </Link>
         </p>
       </div>
 
