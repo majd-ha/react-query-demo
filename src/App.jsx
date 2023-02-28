@@ -6,22 +6,33 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import ErrorPage from "./components/ErrorPage";
-import RootLayout from "./layouts/RootLayout";
-import SuperHerolayout from "./layouts/SuperHerolayout";
+
+//pages
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import RQsuperheroes from "./pages/RQsuperheroes";
 import SingleSuperHero from "./pages/SingleSuperHero";
 import SuperHeroes from "./pages/SuperHeroes";
+//layouts
+
+import RootLayout from "./layouts/RootLayout";
+import RQSuperHerolayout from "./layouts/RQSuperHerolayout";
+import SuperHeroLayout from "./layouts/SuperHeroLayout";
+//components
+import ErrorPage from "./components/ErrorPage";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="/superhroes" element={<SuperHeroes />} />
+      <Route path="/superhroes" element={<SuperHeroLayout />}>
+        <Route index element={<SuperHeroes />} />
+        <Route path=":heroId" element={<SingleSuperHero />} />
+      </Route>
+
       <Route
         path="/Rqsuperhroes"
-        element={<SuperHerolayout />}
+        element={<RQSuperHerolayout />}
         errorElement={<ErrorPage />}
       >
         <Route index element={<RQsuperheroes />} />
