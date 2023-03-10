@@ -38,5 +38,33 @@
 
       "img": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/26/1498493367-wonder-woman-2017.jpg?crop=0.593xw:0.988xh;0.142xw,0&resize=980:*"
     }
+  ],
+  "users": [
+    {
+      "id": "majd@google.com",
+      "name": "majd"
+    },
+    {
+      "id": "ali@google.com",
+      "name": "ali"
+    },
+    {
+      "id": "ahmad@google.com",
+      "name": "ahmad"
+    }
+  ],
+  "channels": [
+    {
+      "id": "majd",
+      "skills": ["js", "react", "vue"]
+    },
+    {
+      "id": "ali",
+      "skills": ["html", "css"]
+    },
+    {
+      "id": "ahmad",
+      "skills": ["tailwind", "bootstrap", "canva"]
+    }
   ]
 }

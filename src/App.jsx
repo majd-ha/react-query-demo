@@ -8,40 +8,43 @@ import {
 } from "react-router-dom";
 
 //pages
+import DashBoard from "./pages/DashBoard";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import RQsuperheroes from "./pages/RQsuperheroes";
-import SingleSuperHero from "./pages/SingleSuperHero";
-import SuperHeroes from "./pages/SuperHeroes";
 //layouts
-
+import AdminLayout from "./layouts/AdminLayout";
 import RootLayout from "./layouts/RootLayout";
-import RQSuperHerolayout from "./layouts/RQSuperHerolayout";
-import SuperHerolayout from "./layouts/SuperHerolayout";
-//components
+import UserLayout from "./layouts/UserLayout";
+
+//routes
+
 import ErrorPage from "./components/ErrorPage";
+import SwitchUser from "./pages/SwitchUser";
+import UserRoutes from "./routes/UserRoutes";
+///
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
+      <Route path="switchUser" element={<SwitchUser />} />
+
       <Route
-        path="/superhroes"
-        element={<SuperHerolayout />}
+        path="profile"
+        element={<UserLayout />}
         errorElement={<ErrorPage />}
       >
-        <Route index element={<SuperHeroes />} />
-        <Route path=":heroId" element={<SingleSuperHero />} />
+        {UserRoutes()}
       </Route>
 
       <Route
-        path="/Rqsuperhroes"
-        element={<RQSuperHerolayout />}
+        path="adminPanel"
+        element={<AdminLayout />}
         errorElement={<ErrorPage />}
       >
-        <Route index element={<RQsuperheroes />} />
-        <Route path=":heroId" element={<SingleSuperHero />} />
+        <Route index element={<DashBoard />} />
       </Route>
+
       <Route path="*" element={<NotFound />} />
     </Route>
   )
