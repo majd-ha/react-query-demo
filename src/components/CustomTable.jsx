@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function CustomTable({ tabname, data, err }) {
   return (
-    <div className="w-[800px] rounded-lg h-[550px]">
+    <div className="w-[800px] rounded-lg min-h-[450px]">
       {err ? (
         <div className="text-red-700 text-center border border-red-700 rounded-lg">
           {err.message}
@@ -25,10 +25,14 @@ export default function CustomTable({ tabname, data, err }) {
             return (
               <tr key={el.id}>
                 <td className="text-center border border-red-500 h-9">
-                  <Link to={el.id.toString()}>{el.name}</Link>
+                  <Link to={"/profile/Rqsuperhroes/" + el.id.toString()}>
+                    {el.name}
+                  </Link>
                 </td>
                 <td className="text-center border border-red-500 h-9">
-                  <Link to={el.id.toString()}>{el.alterEgo}</Link>
+                  <Link to={"/profile/Rqsuperhroes/" + el.id.toString()}>
+                    {el.alterEgo}
+                  </Link>
                 </td>
               </tr>
             );

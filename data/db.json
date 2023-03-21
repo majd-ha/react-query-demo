@@ -5,7 +5,6 @@
       "name": "superman",
       "alterEgo": "brouce wayne",
       "description": "Superman is a superhero who appears in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, and debuted in the comic book Action Comics #1 (cover-dated June 1938 and published April 18, 1938).[1] Superman has been adapted to a number of other media, including radio serials, novels, films, television shows, theater productions, and video games.",
-
       "img": "https://w7.pngwing.com/pngs/78/355/png-transparent-superman-logo-computer-icons-superman-superhero-fictional-character-preview-thumbnail.png"
     },
     {
@@ -20,7 +19,6 @@
       "name": "wonderwoman",
       "alterEgo": "princess diana",
       "description": " Wonder Woman is a superhero created by the American psychologist and writer William Moulton Marston (pen name: Charles Moulton),[2] and artist Harry G. Peter. Marston's wife, Elizabeth, and their life partner, Olive Byrne,[3] are credited as being his inspiration for the character's appearance",
-
       "img": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/26/1498493367-wonder-woman-2017.jpg?crop=0.593xw:0.988xh;0.142xw,0&resize=980:*"
     },
     {
@@ -35,8 +33,42 @@
       "name": "wonderwoman",
       "alterEgo": "princess diana",
       "description": " Wonder Woman is a superhero created by the American psychologist and writer William Moulton Marston (pen name: Charles Moulton),[2] and artist Harry G. Peter. Marston's wife, Elizabeth, and their life partner, Olive Byrne,[3] are credited as being his inspiration for the character's appearance",
-
       "img": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/26/1498493367-wonder-woman-2017.jpg?crop=0.593xw:0.988xh;0.142xw,0&resize=980:*"
+    },
+    {
+      "name": "majd",
+      "img": "ew",
+      "alterEgo": "farfr",
+      "description": "ew",
+      "id": 6
+    },
+    {
+      "name": "v",
+      "img": null,
+      "alterEgo": null,
+      "description": null,
+      "id": 7
+    },
+    {
+      "name": "hello there",
+      "img": "bfdbfd",
+      "alterEgo": "fbgfbfb",
+      "description": "bffdbfd",
+      "id": 8
+    },
+    {
+      "name": "jhgjghkgk",
+      "img": "yjytjyt",
+      "alterEgo": "yjytjyt",
+      "description": "yjytjytjtyjyt",
+      "id": 9
+    },
+    {
+      "name": "",
+      "img": "",
+      "alterEgo": "",
+      "description": "",
+      "id": 10
     }
   ],
   "users": [
@@ -56,15 +88,68 @@
   "channels": [
     {
       "id": "majd",
-      "skills": ["js", "react", "vue"]
+      "skills": [
+        "js",
+        "react",
+        "vue"
+      ]
     },
     {
       "id": "ali",
-      "skills": ["html", "css"]
+      "skills": [
+        "html",
+        "css"
+      ]
     },
     {
       "id": "ahmad",
-      "skills": ["tailwind", "bootstrap", "canva"]
+      "skills": [
+        "tailwind",
+        "bootstrap",
+        "canva"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "samsung",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3kiS-qPvDBMU8CZarSqz4p4_LsTpU4fpIcA&usqp=CAU"
+    },
+    {
+      "id": 2,
+      "name": "iphone",
+      "img": "https://cdn.dxomark.com/wp-content/uploads/medias/post-126771/Apple-iPhone-14-Pro_FINAL_featured-image-packshot-review-1.jpg"
+    },
+    {
+      "id": 3,
+      "name": "laptop",
+      "img": "https://helios-i.mashable.com/imagery/articles/05MWwHhUKuh33Ic3lHIKDMl/hero-image.fill.size_1248x702.v1623385155.png"
+    },
+    {
+      "id": 4,
+      "name": "switch",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXtTeK6fyg0bTUB9lCE_if7i19lyvfNquTEA&usqp=CAU"
+    },
+    {
+      "id": 5,
+      "name": "router",
+      "img": "https://www.comms-express.com/blog/wp-content/uploads/2021/03/cisco-top-5-routers-header-image.png"
+    },
+    {
+      "id": 6,
+      "name": "access point",
+      "img": "https://www.shutterstock.com/image-photo/access-point-device-isolated-on-260nw-784201579.jpg"
+    },
+    {
+      "id": 7,
+      "name": "mouse",
+      "img": "https://red-dot-geek.com/wp-content/uploads/2019/01/mouse-wireless.jpg?ezimgfmt=rs:372x291/rscb4/ngcb4/notWebP"
+    },
+    {
+      "id": 8,
+      "name": "lenovo",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBj2sDV9-oj6GOi8qcwd0OceQaLwR9Xalnig&usqp=CAU"
     }
   ]
 }
