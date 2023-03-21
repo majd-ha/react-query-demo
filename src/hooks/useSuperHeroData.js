@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useQuery } from "react-query";
+import { useMutation, useQuery, useQueryClient } from "react-query";
 
 export const useSuperHeroData = (onError, onSuccess) => {
   const fetchSuper = () => {
@@ -10,5 +10,22 @@ export const useSuperHeroData = (onError, onSuccess) => {
     cacheTime: 5000,
     onError,
     onSuccess,
+  });
+};
+
+export const useAddHero = () => {
+  const queryClinet = useQueryClient();
+  const addhero = (hero) => {
+    return axios.post("http://localhost:4000/superheros", hero);
+  };
+  return useMutation(addhero, {
+    onSuccess: (comingdata) => {
+      queryClinet.setQueryData("superhero-query", (oldData) => {
+        return {
+          ...oldData,
+          data: [...oldData.data, comingdata.data],
+        };
+      });
+    },
   });
 };

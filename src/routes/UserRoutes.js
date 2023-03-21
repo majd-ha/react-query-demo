@@ -4,6 +4,9 @@ import { Route } from "react-router-dom";
 //layouts
 import RQSuperHerolayout from "../layouts/RQSuperHerolayout";
 import SuperHerolayout from "../layouts/SuperHerolayout";
+import AddSuperHero from "../pages/AddSuperHero";
+import InfiniteQueryesTest from "../pages/InfiniteQueryesTest";
+import PaginatedSample from "../pages/PaginatedSample";
 //pages
 import RQsuperheroes from "../pages/RQsuperheroes";
 import SingleSuperHero from "../pages/SingleSuperHero";
@@ -17,9 +20,14 @@ export default function UserRoutes() {
       </Route>
 
       <Route path="Rqsuperhroes" element={<RQSuperHerolayout />}>
-        <Route index element={<RQsuperheroes />} />
+        <Route path="heros" element={<RQsuperheroes />}>
+          <Route path="addhero" element={<AddSuperHero />} />
+        </Route>
+
         <Route path=":heroId" element={<SingleSuperHero />} />
       </Route>
+      <Route path="products" element={<PaginatedSample />} />
+      <Route path="infinte-pro" element={<InfiniteQueryesTest />} />
     </>
   );
 }

@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 
 //pages
+import About from "./pages/About";
 import DashBoard from "./pages/DashBoard";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
@@ -21,12 +22,14 @@ import UserLayout from "./layouts/UserLayout";
 import ErrorPage from "./components/ErrorPage";
 import SwitchUser from "./pages/SwitchUser";
 import UserRoutes from "./routes/UserRoutes";
+
 ///
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
+      <Route path="about" element={<About />} />
       <Route path="switchUser" element={<SwitchUser />} />
 
       <Route

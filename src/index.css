@@ -29,3 +29,7 @@ animation: skill  1s linear infinite alternate ;
     background-color: hsl(200, 20%, 95%);
   }
 }
+
+.inputField{
+  @apply w-full outline-none border  indent-3;
+}

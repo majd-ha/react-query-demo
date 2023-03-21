@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Link, Outlet } from "react-router-dom";
 import CardView from "../components/CardView";
 import { useSuperHeroData } from "../hooks/useSuperHeroData";
 
 export default function RQsuperheroes() {
+  const myRef = useRef(null);
   const onError = (error) => {
     console.log("this is error : ", error);
   };
@@ -19,13 +21,36 @@ export default function RQsuperheroes() {
   }
 
   return (
-    <div className="flex justify-center">
-      <CardView
-        tabname={"RQSuper Heroes"}
-        data={data?.data}
-        load={isLoading}
-        err={error}
-      />
+    <div>
+      <div className="flex justify-center">
+        <CardView
+          tabname={"RQSuper Heroes"}
+          data={data?.data}
+          load={isLoading}
+          err={error}
+        />
+      </div>
+
+      <main>
+        <div
+          className="flex justify-center items-center mb-20"
+          onClick={() =>
+            setTimeout(() => {
+              myRef.current.scrollIntoView({ behavior: "smooth" });
+            }, 1000)
+          }
+        >
+          <Link
+            to={"addHero"}
+            className="w-24 h-12 pt-3 text-center bg-gray-400 text-white rounded-lg"
+          >
+            add hero
+          </Link>
+        </div>
+        <div ref={myRef} className="mt-20">
+          <Outlet />
+        </div>
+      </main>
     </div>
   );
 }
