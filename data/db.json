@@ -34,41 +34,6 @@
       "alterEgo": "princess diana",
       "description": " Wonder Woman is a superhero created by the American psychologist and writer William Moulton Marston (pen name: Charles Moulton),[2] and artist Harry G. Peter. Marston's wife, Elizabeth, and their life partner, Olive Byrne,[3] are credited as being his inspiration for the character's appearance",
       "img": "https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/26/1498493367-wonder-woman-2017.jpg?crop=0.593xw:0.988xh;0.142xw,0&resize=980:*"
-    },
-    {
-      "name": "majd",
-      "img": "ew",
-      "alterEgo": "farfr",
-      "description": "ew",
-      "id": 6
-    },
-    {
-      "name": "v",
-      "img": null,
-      "alterEgo": null,
-      "description": null,
-      "id": 7
-    },
-    {
-      "name": "hello there",
-      "img": "bfdbfd",
-      "alterEgo": "fbgfbfb",
-      "description": "bffdbfd",
-      "id": 8
-    },
-    {
-      "name": "jhgjghkgk",
-      "img": "yjytjyt",
-      "alterEgo": "yjytjyt",
-      "description": "yjytjytjtyjyt",
-      "id": 9
-    },
-    {
-      "name": "",
-      "img": "",
-      "alterEgo": "",
-      "description": "",
-      "id": 10
     }
   ],
   "users": [
@@ -88,26 +53,15 @@
   "channels": [
     {
       "id": "majd",
-      "skills": [
-        "js",
-        "react",
-        "vue"
-      ]
+      "skills": ["js", "react", "vue"]
     },
     {
       "id": "ali",
-      "skills": [
-        "html",
-        "css"
-      ]
+      "skills": ["html", "css"]
     },
     {
       "id": "ahmad",
-      "skills": [
-        "tailwind",
-        "bootstrap",
-        "canva"
-      ]
+      "skills": ["tailwind", "bootstrap", "canva"]
     }
   ],
   "products": [
